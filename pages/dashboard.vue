@@ -304,8 +304,10 @@ import { useRouter } from 'vue-router'
 
 // Apply auth middleware
 definePageMeta({
-  middleware: ['auth']
+  middleware: ['auth'],
+  layout: false 
 })
+
 
 // Set page title
 useHead({

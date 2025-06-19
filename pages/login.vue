@@ -103,6 +103,10 @@ const password = ref('')
 const isLoading = ref(false)
 const error = ref('')
 
+definePageMeta({
+  layout: false 
+})
+
 const handleLogin = async () => {
   try {
     // Clear previous errors

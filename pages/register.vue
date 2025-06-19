@@ -134,6 +134,10 @@ const confirmPassword = ref('')
 const isLoading = ref(false)
 const error = ref('')
 
+definePageMeta({
+  layout: false 
+})
+
 const passwordMismatch = computed(() => {
   return confirmPassword.value && password.value !== confirmPassword.value
 })
